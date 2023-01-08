@@ -1,3 +1,5 @@
+package week_one;
+
 public class MockOne {
     public static void main(String[] args){
         int[] arr = {3,6,1,5,4};

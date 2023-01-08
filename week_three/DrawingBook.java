@@ -3,6 +3,10 @@ package week_three;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+/*
+problem link:
+https://www.hackerrank.com/challenges/three-month-preparation-kit-drawing-book/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=three-month-preparation-kit&playlist_slugs%5B%5D=three-month-week-three
+ */
 
 public class DrawingBook {
     public static void main(String[] args) throws IOException {
@@ -14,6 +18,7 @@ public class DrawingBook {
         int p = Integer.parseInt(bufferedReader.readLine().trim());
 
         int result = DrawingBookResult.pageCount(n, p);
+        System.out.println(result);
 
 //        bufferedWriter.write(String.valueOf(result));
 //        bufferedWriter.newLine();
@@ -33,23 +38,10 @@ class DrawingBookResult{
      */
 
     public static int pageCount(int n, int p) {
-        int count =0;
-        // Write your code here
-        if(p+1 == n || p-1 == 1){
-            return count;
-        }
-        if(n-p<p-1){
-            while(n > p){
-                n -= 2;
-                count++;
-            }
-        }else {
-            while (p>1){
-                p -=2;
-                count++;
-            }
-        }
-        return count;
+        // from the first page number of turns = p/2;
+        // from the last page number of turn to the first page = n/2;
+        // if we subtract numOfTurn to the first page from last page we get the turns from last page to desired page
+       return Math.min(p/2,n/2 - p/2);
     }
 
 }

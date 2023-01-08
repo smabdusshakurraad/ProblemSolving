@@ -1,3 +1,5 @@
+package week_one;
+
 import java.io.*;
 
 /*

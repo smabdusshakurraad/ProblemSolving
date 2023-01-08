@@ -1,3 +1,5 @@
+package week_one;
+
 import java.util.Scanner;
 /*
 problem link:
@@ -5,7 +7,7 @@ https://www.hackerrank.com/challenges/three-month-preparation-kit-camel-case/pro
  */
 public class CamelCaseFour {
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named week_one.Solution. */
         Scanner sc = new Scanner(System.in);
         String line, text;
         StringBuilder word;
