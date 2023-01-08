@@ -35,6 +35,9 @@ class DrawingBookResult{
     public static int pageCount(int n, int p) {
         int count =0;
         // Write your code here
+        if(p+1 == n || p-1 == 1){
+            return count;
+        }
         if(n-p<p-1){
             while(n > p){
                 n -= 2;
