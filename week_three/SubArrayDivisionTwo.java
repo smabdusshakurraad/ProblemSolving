@@ -1,3 +1,5 @@
+package week_three;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,6 +7,10 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
+/*
+problem link:
+https://www.hackerrank.com/challenges/three-month-preparation-kit-the-birthday-bar/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=three-month-preparation-kit&playlist_slugs%5B%5D=three-month-week-three
+ */
 
 public class SubArrayDivisionTwo {
     public static void main(String[] args) throws IOException {
@@ -52,7 +58,7 @@ class SubArrayDivisionTwoResult{
             return count;
         }
         else if(s.size()>m){
-            for(int i=0;i<s.size()-m;i++){
+            for(int i=0;i<=s.size()-m;i++){
                 sum = 0;
                 for(int j =0;j<m;j++){
                     sum += s.get(i+j);
