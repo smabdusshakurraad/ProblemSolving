@@ -8,8 +8,8 @@
 
 public class DFS {
     public void dfs( Map<Integer, List<Integer>> graph, int start){
-        Set<Integer> stack = new HashSet<>();
-        dfsHelper(graph, start, stack);
+        Set<Integer> visited = new HashSet<>();
+        dfsHelper(graph, start, visited);
     }
 
     public void dfsHelper(Map<Integer, List<Integer>> graph, int currentNode, Set<Integer> visited){
