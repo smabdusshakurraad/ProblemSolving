@@ -6,7 +6,7 @@
  */
 
 
-public class DFS {
+class DFS {
     public void dfs( Map<Integer, List<Integer>> graph, int start){
         Set<Integer> visited = new HashSet<>();
         dfsHelper(graph, start, visited);
@@ -15,7 +15,7 @@ public class DFS {
     public void dfsHelper(Map<Integer, List<Integer>> graph, int currentNode, Set<Integer> visited){
 
         // Process the node (e.g., print it, add to a result list)
-        System.out.println( start );
+        System.out.println( currentNode );
         // 1. Mark the current node as visited
         visited.add(currentNode);
 
